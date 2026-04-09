@@ -7,6 +7,7 @@ module.exports = {
       args: "start",
       env: {
         NODE_ENV: "production",
+        BASE_PATH: "/flexcoders-sandbox",
         PORT: "3002",
       },
     },

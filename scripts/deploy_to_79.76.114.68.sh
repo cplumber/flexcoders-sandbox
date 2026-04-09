@@ -14,8 +14,8 @@ rsync -av --delete \
   --exclude ".git" \
   "$PROJECT_DIR"/ "$REMOTE_HOST":"$REMOTE_DIR"/
 
-ssh "$REMOTE_HOST" "cd $REMOTE_DIR && npm install"
-ssh "$REMOTE_HOST" "cd $REMOTE_DIR && npm run build"
+ssh "$REMOTE_HOST" "cd $REMOTE_DIR && BASE_PATH=/flexcoders-sandbox npm install"
+ssh "$REMOTE_HOST" "cd $REMOTE_DIR && BASE_PATH=/flexcoders-sandbox npm run build"
 ssh "$REMOTE_HOST" "cd $REMOTE_DIR && pm2 startOrReload ecosystem.config.cjs --update-env || pm2 start ecosystem.config.cjs"
 
 echo "Copied project to $REMOTE_HOST:$REMOTE_DIR"
