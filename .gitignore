@@ -1,4 +1,4 @@
-.next
+.next/*
 node_modules
 .env
 .env.*
@@ -6,3 +6,5 @@ dist
 out
 coverage
 .DS_Store
+cache/
+turbopack/
