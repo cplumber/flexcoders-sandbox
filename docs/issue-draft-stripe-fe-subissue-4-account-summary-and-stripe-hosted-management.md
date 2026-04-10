@@ -22,8 +22,6 @@ Implement the logged-in user account area needed to display current premium and 
 - [ ] Premium access status
 - [ ] Premium access type
 - [ ] Premium valid-until or expiry date
-- [ ] Premium manual-override state indicator if active
-- [ ] Premium override effective-until
 - [ ] Subscription status
 - [ ] Current period end / renewal date
 - [ ] Auto-renew or cancellation-at-period-end status

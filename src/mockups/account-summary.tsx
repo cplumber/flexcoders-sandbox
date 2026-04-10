@@ -62,10 +62,6 @@ const AccountSummaryMockupPage = () => {
                   <InputShell label="Status" value="Active" />
                   <InputShell label="Access type" value="Premium while active" />
                 </div>
-                <div className="grid gap-3 sm:grid-cols-2">
-                  <InputShell label="Manual update" value="Not active" />
-                  <InputShell label="Update until" value="-" />
-                </div>
                 <div className="mt-auto flex gap-3 pt-2">
                   <Button className="h-13 flex-1 rounded-[1.15rem] bg-emerald-600 text-sm font-semibold text-white shadow-none hover:bg-emerald-500">
                     Open billing portal
