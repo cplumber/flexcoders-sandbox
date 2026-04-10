@@ -57,34 +57,6 @@ const SupportOverrideMockupPage = () => {
                 <InputShell label="Email" value="name@example.com" />
                 <InputShell label="User name" value="Alex Johnson" />
                 <InputShell label="User ID" value="#2048" />
-                <div className="rounded-[1.35rem] border border-zinc-200 bg-white p-4">
-                  <div className="mb-4 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-zinc-500">
-                    Search results
-                  </div>
-                  <div className="space-y-3">
-                    {[
-                      ["Alex Johnson", "name@example.com", "#2048", "Premium"],
-                      ["Alex Brown", "alex@example.com", "#3190", "Non-premium"],
-                    ].map((row, index) => (
-                      <div
-                        className={`flex items-center justify-between gap-4 rounded-[1rem] border px-4 py-3 text-sm ${
-                          index === 0
-                            ? "border-emerald-200 bg-emerald-50/70"
-                            : "border-zinc-200 bg-white"
-                        }`}
-                        key={row.join("-")}
-                      >
-                        <div className="space-y-1">
-                          <div className="font-medium text-zinc-950">{row[0]}</div>
-                          <div className="text-xs text-zinc-500">{row[1]} · {row[2]}</div>
-                        </div>
-                        <div className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-semibold text-zinc-700">
-                          {row[3]}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
                 <div className="grid gap-3 sm:grid-cols-2">
                   <InputShell label="Effective access" value="Premium" />
                   <InputShell label="Underlying state" value="Subscription active" />
@@ -148,6 +120,45 @@ const SupportOverrideMockupPage = () => {
               </CardContent>
             </Card>
           </div>
+
+          <Card className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white/90 shadow-[0_28px_90px_-50px_rgba(24,24,27,0.12)]">
+            <CardHeader className="space-y-2 p-8 pb-4">
+              <CardTitle className="text-[1.35rem] font-semibold tracking-[-0.03em] text-zinc-950">
+                Search results
+              </CardTitle>
+              <CardDescription className="text-sm leading-6 text-zinc-600">
+                Matching accounts for the current search.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="p-8 pt-0">
+              <div className="overflow-hidden rounded-[1.35rem] border border-zinc-200 bg-white">
+                <div className="grid grid-cols-5 gap-4 border-b border-zinc-200 bg-zinc-50 px-4 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-zinc-500">
+                  <div>Name</div>
+                  <div>Email</div>
+                  <div>User ID</div>
+                  <div>Premium</div>
+                  <div>Action</div>
+                </div>
+                {[
+                  ["Alex Johnson", "name@example.com", "#2048", "Active", "Open"],
+                  ["Alex Brown", "alex@example.com", "#3190", "Inactive", "Open"],
+                ].map((row, index) => (
+                  <div
+                    className={`grid grid-cols-5 gap-4 border-b border-zinc-100 px-4 py-4 text-sm text-zinc-700 last:border-b-0 ${
+                      index === 0 ? "bg-emerald-50/50" : "bg-white"
+                    }`}
+                    key={row.join("-")}
+                  >
+                    {row.map((cell, cellIndex) => (
+                      <div key={cell} className={cellIndex === 4 ? "font-semibold text-emerald-700" : ""}>
+                        {cell}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
 
           <div className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
             <Card className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white/90 shadow-[0_28px_90px_-50px_rgba(24,24,27,0.12)]">

@@ -12,6 +12,7 @@ Implement Drupal admin/support lookup and manual premium override backed by auth
 
 ## Scope
 - [ ] Implement user lookup
+- [ ] Show separate horizontal search results table
 - [ ] Show support-only current-state summary
 - [ ] Show per-user transaction list
 - [ ] Implement manual premium access override UI
@@ -19,7 +20,7 @@ Implement Drupal admin/support lookup and manual premium override backed by auth
 ## User lookup
 ### Required UI fields
 - [ ] User lookup by email, username, or user id
-- [ ] Search results list for matching users
+- [ ] Search results table for matching users
 - [ ] Selected user summary after lookup
 - [ ] Current premium access status display
 - [ ] Current premium access type display
