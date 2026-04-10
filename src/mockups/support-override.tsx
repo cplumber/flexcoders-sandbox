@@ -21,13 +21,13 @@ const SupportOverrideMockupPage = () => {
         <div className="space-y-10">
           <div className="space-y-4">
             <div className="inline-flex rounded-full bg-rose-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-rose-800 ring-1 ring-rose-200">
-              Member access
+              Support access
             </div>
             <h1 className="text-4xl font-semibold tracking-[-0.06em] text-zinc-950 sm:text-5xl">
-              Find a member
+              Find an account
             </h1>
             <p className="max-w-3xl text-base leading-7 text-zinc-600">
-              Search by email, name, or member ID.
+              Search by email, username, or user ID.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ const SupportOverrideMockupPage = () => {
                         User lookup
                       </CardTitle>
                       <CardDescription className="text-sm leading-6 text-zinc-600">
-                        Find the right member account.
+                        Find the right account.
                       </CardDescription>
                     </div>
                   </div>
@@ -57,6 +57,34 @@ const SupportOverrideMockupPage = () => {
                 <InputShell label="Email" value="name@example.com" />
                 <InputShell label="User name" value="Alex Johnson" />
                 <InputShell label="User ID" value="#2048" />
+                <div className="rounded-[1.35rem] border border-zinc-200 bg-white p-4">
+                  <div className="mb-4 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-zinc-500">
+                    Search results
+                  </div>
+                  <div className="space-y-3">
+                    {[
+                      ["Alex Johnson", "name@example.com", "#2048", "Premium"],
+                      ["Alex Brown", "alex@example.com", "#3190", "Non-premium"],
+                    ].map((row, index) => (
+                      <div
+                        className={`flex items-center justify-between gap-4 rounded-[1rem] border px-4 py-3 text-sm ${
+                          index === 0
+                            ? "border-emerald-200 bg-emerald-50/70"
+                            : "border-zinc-200 bg-white"
+                        }`}
+                        key={row.join("-")}
+                      >
+                        <div className="space-y-1">
+                          <div className="font-medium text-zinc-950">{row[0]}</div>
+                          <div className="text-xs text-zinc-500">{row[1]} · {row[2]}</div>
+                        </div>
+                        <div className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-semibold text-zinc-700">
+                          {row[3]}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
                 <div className="grid gap-3 sm:grid-cols-2">
                   <InputShell label="Effective access" value="Premium" />
                   <InputShell label="Underlying state" value="Subscription active" />
@@ -158,7 +186,7 @@ const SupportOverrideMockupPage = () => {
                         Update history
                       </CardTitle>
                       <CardDescription className="text-sm leading-6 text-zinc-600">
-                        Recent changes for this member.
+                        Recent changes for this account.
                       </CardDescription>
                     </div>
                   </div>
@@ -193,7 +221,7 @@ const SupportOverrideMockupPage = () => {
                 Recent payments
               </CardTitle>
               <CardDescription className="text-sm leading-6 text-zinc-600">
-                Payment activity for this member.
+                Payment activity for this account.
               </CardDescription>
             </CardHeader>
             <CardContent className="p-8 pt-0">

@@ -1,7 +1,7 @@
 # Stripe Integration - Drupal payment entry UI and checkout-session launch
 
 ## Related issues
-- Parent FE umbrella: #366
+- Parent FE: #366
 - Backend scope: #359
 
 ## Summary
@@ -22,7 +22,7 @@ Frontend controls let a user start checkout, call backend session-creation endpo
 - [ ] Render price
 - [ ] Render currency
 - [ ] Render CTA button: `Continue to secure payment`
-- [ ] If multiple one-time plans exist, support either radio options or a dropdown
+- [ ] Support radio options or a dropdown if multiple one-time plans exist
 - [ ] Require login before one-time premium checkout
 
 ### Monthly subscription section
@@ -32,7 +32,7 @@ Frontend controls let a user start checkout, call backend session-creation endpo
 - [ ] Render currency
 - [ ] Render benefits/features list
 - [ ] Render CTA button: `Start subscription`
-- [ ] If multiple subscription tiers exist, support plan selection with radio cards or a dropdown
+- [ ] Support plan selection with radio cards or a dropdown if multiple subscription tiers exist
 - [ ] Hide or disable purchase CTA when user already has an active subscription
 
 ### Donation entry point
@@ -78,6 +78,5 @@ Frontend controls let a user start checkout, call backend session-creation endpo
 - [ ] Frontend redirects to Stripe Checkout
 - [ ] Duplicate-submit protection is implemented
 - [ ] Logged-in user with active subscription does not see an invalid purchase path
-
-- Do not collect payment card details in Drupal
-- Do not mark payment as successful from the frontend redirect alone
+- [ ] Do not collect payment card details in Drupal
+- [ ] Do not mark payment as successful from the frontend redirect alone

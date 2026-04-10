@@ -1,4 +1,4 @@
-# Stripe Integration - Drupal admin/support lookup and manual premium override
+# Stripe Integration - Drupal admin/support user lookup and manual premium override
 
 ## Related issues
 - Parent FE umbrella: #366
@@ -8,7 +8,7 @@
 Implement Drupal admin/support lookup and manual premium override backed by authorized backend endpoints.
 
 ## Mockup
-![Member access mockup](./screenshots/support-override.png)
+![Support lookup mockup](./screenshots/support-override.png)
 
 ## Scope
 - [ ] Implement user lookup
@@ -19,6 +19,8 @@ Implement Drupal admin/support lookup and manual premium override backed by auth
 ## User lookup
 ### Required UI fields
 - [ ] User lookup by email, username, or user id
+- [ ] Search results list for matching users
+- [ ] Selected user summary after lookup
 - [ ] Current premium access status display
 - [ ] Current premium access type display
 - [ ] Current validity/expiry display

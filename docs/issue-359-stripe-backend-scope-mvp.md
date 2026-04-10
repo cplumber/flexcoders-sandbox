@@ -2,7 +2,6 @@
 
 - GitHub issue: https://github.com/https-github-com-web-recruiters/flexcoders-fe/issues/359
 - Related FE umbrella issue: https://github.com/https-github-com-web-recruiters/flexcoders-fe/issues/366
-- Repo: `https-github-com-web-recruiters/flexcoders-fe`
 
 ## Summary
 Implement backend support for Stripe-based payments covering:

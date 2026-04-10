@@ -2,7 +2,6 @@
 
 - GitHub issue: https://github.com/https-github-com-web-recruiters/flexcoders-fe/issues/366
 - Backend reference issue: https://github.com/https-github-com-web-recruiters/flexcoders-fe/issues/359
-- Repo: `https-github-com-web-recruiters/flexcoders-fe`
 
 ## Summary
 Implement the Drupal frontend for the Stripe payment MVP backed by #359.
@@ -51,11 +50,11 @@ Stripe Checkout is the payment UI. Drupal should only collect minimal inputs, ca
 - Refund: `not_refunded`, `pending`, `succeeded`, `failed`
 
 ## Sub-issues
-- [ ] #369 Stripe Integration - Drupal payment entry UI and checkout-session launch
-- [ ] #370 Stripe Integration - Drupal donation flow for anonymous and logged-in users
-- [ ] #371 Stripe Integration - Drupal payment result pages and backend-confirmed status handling
-- [ ] #372 Stripe Integration - Drupal account summary and Stripe-hosted management
-- [ ] #373 Stripe Integration - Drupal admin/support lookup and manual premium override
+- [ ] #369
+- [ ] #370
+- [ ] #371
+- [ ] #372
+- [ ] #373
 
 ## Parent acceptance criteria
 - [ ] Drupal provides entry points for one-time premium purchase and monthly subscription
