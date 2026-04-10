@@ -7,8 +7,8 @@
 ## Summary
 Implement Drupal admin/support lookup and manual premium override backed by authorized backend endpoints.
 
-## Mockup
-![Support lookup mockup](./screenshots/support-override.png)
+## Latest mockup
+- https://oci1.xln.one/flexcoders-sandbox/support-override
 
 ## Scope
 - [ ] Implement user lookup

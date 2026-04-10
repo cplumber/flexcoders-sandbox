@@ -6,6 +6,9 @@
 ## Summary
 Implement the Drupal frontend for the Stripe payment MVP backed by #359.
 
+## Latest mockup
+- https://oci1.xln.one/flexcoders-sandbox/payment-entry
+
 This parent issue is an umbrella for the frontend work needed to:
 - launch one-time premium checkout
 - launch monthly subscription checkout

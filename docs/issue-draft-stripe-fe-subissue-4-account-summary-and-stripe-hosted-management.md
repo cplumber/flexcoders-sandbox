@@ -7,8 +7,8 @@
 ## Summary
 Implement the logged-in user account area needed to display current premium and subscription state in Drupal, with Stripe-hosted management for billing details.
 
-## Mockup
-![Membership mockup](./screenshots/account-summary.png)
+## Latest mockup
+- https://oci1.xln.one/flexcoders-sandbox/account-summary
 
 ## Scope
 - [ ] Add a payment/account section in Drupal for authenticated users

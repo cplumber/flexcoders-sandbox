@@ -7,8 +7,8 @@
 ## Summary
 Implement the dedicated Drupal donation flow that supports both anonymous users and logged-in users, creates a backend donation checkout session, and redirects to Stripe Checkout.
 
-## Mockup
-![Donation mockup](./screenshots/donation.png)
+## Latest mockup
+- https://oci1.xln.one/flexcoders-sandbox/donation
 
 ## Scope
 - [ ] Render donation form/component on the dedicated donation page

@@ -7,8 +7,8 @@
 ## Summary
 Implement Drupal result pages and status messaging for Stripe payment flows. These pages are informational only and must reflect backend-confirmed state rather than redirect state alone.
 
-## Mockup
-![Payment status mockup](./screenshots/result-states.png)
+## Latest mockup
+- https://oci1.xln.one/flexcoders-sandbox/result-states
 
 ## Scope
 - [ ] Success page

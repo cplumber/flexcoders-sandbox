@@ -12,8 +12,8 @@ Implement the Drupal entry UI for:
 
 Frontend controls let a user start checkout, call backend session-creation endpoints, and redirect to Stripe Checkout.
 
-## Mockup
-![Payment entry mockup](./screenshots/payment-entry.png)
+## Latest mockup
+- https://oci1.xln.one/flexcoders-sandbox/payment-entry
 
 ## Scope
 ### One-time premium section
